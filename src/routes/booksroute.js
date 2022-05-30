@@ -40,7 +40,7 @@ booksRouter.post('/add', function (req, res) {
         }
         console.log(item)  ;
         const book = new bookdata(item);
-        //corrected error here.added .then
+        //corrected error here , added .then to make sure redirecting only after save
         book.save()
         .then(()=>{res.redirect('/books');})
         

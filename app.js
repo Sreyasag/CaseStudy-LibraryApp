@@ -45,6 +45,6 @@ app.use('/', (req,res) => {
 
 
 ////part#1 point1
-app.listen(5000,()=>{
+app.listen(process.env.PORT || 5000,()=>{
     console.log("Server Ready on 5000");
 });

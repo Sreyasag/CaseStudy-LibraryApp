@@ -39,8 +39,12 @@ authorsRouter.post('/add', function (req, res) {
     }
     console.log(item)  ;
     const author = new authordata(item);
-    author.save();
-    res.redirect('/authors');
+    // corrected here, redirect only after save
+    author.save()
+    .then(() => {
+        res.redirect('/authors');
+    })
+    
 
 })
 
