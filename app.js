@@ -1,8 +1,7 @@
 const express = require('express'); 
 const path = require ('path'); 
 const cors = require('cors');
-// part#1 point2
-const mongoose = require('mongoose'); 
+    
 
 
 const loginRouter = require('./src/routes/loginroute');

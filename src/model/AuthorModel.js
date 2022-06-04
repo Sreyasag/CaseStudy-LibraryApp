@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-mongoose.connect('mongodb+srv://sreyas:112358@cluster0.4jbvf.mongodb.net/Library');
+mongoose.connect('mongodb+srv://sreyas:<password>@cluster0.4jbvf.mongodb.net/Library',{useNewUrlParser:true});
 const Schema = mongoose.Schema;
 
 
